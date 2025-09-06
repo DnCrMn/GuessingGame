@@ -1,1 +1,28 @@
+initialize variable tries = 7
+initialize variable guess = 0
+initialize variable number = 0
+initialize variable won = false
+
+do 
+    while (tries > 0 AND not won)
+        Set number = random value from 1 to 100
+        Ask user guess "Guess number from 1 to 100:" 
+
+        if guess = number
+            won = true
+        else
+            Print out "You have guessed incorrectly. Please try again."
+            decrease tries by 1
+
+    if won = true
+        Print out "You have guessed the correct number. You Win!"
+    else 
+        Print out "You failed to guess the number. You lose."
+
+    do
+        Ask user input "Would you like to try again (y/n)"
+    while (input is not y AND not n)
+while (input is not n)
+
+Print out "Thanks for playing the guessing game!"
 
